@@ -60,7 +60,7 @@ public class CacheChaveMemoriaEjb {
             log.debug("Iniciando build do cliente do cache em memoria");
 
             RemoteCacheManager rmc = dataGridClient.getClientCache();
-            return rmc.getCache("cache");
+            return rmc.getCache("keys");
         } catch (Exception e){
             log.error("Falha ao recuperar o acesso ao cache no DataGrid", e);
         }
