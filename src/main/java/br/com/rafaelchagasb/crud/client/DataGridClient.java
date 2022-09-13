@@ -28,12 +28,12 @@ public class DataGridClient {
                     .statistics()
                     .enable()
                     .addServer()
-                    .host("localhost")
+                    .host("example-infinispan.datagrid-oracle.svc")
                     .port(11222) //11222
                     .security()
                     .authentication()
-                    .username("admin")
-                    .password("changeme");
+                    .username("developer")
+                    .password("YIfxjnHxUmleeghW");
             this.rmc = new RemoteCacheManager(cb.build(), true);
         } catch(Exception e) {
             log.error("Falha ao estabelecer conexão com o DataGrid", e);
